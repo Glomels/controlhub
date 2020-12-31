@@ -5,7 +5,7 @@ get '/api/fibindex/:index' do
 end
 
  
-def getFibonacciValueFromIndex(value)
-    index = (1.6180339**value - (-0.6180339)**value) / 2.236067977
-    return index.round().to_s
+def getFibonacciValueFromIndex(index)
+    value = (1.6180339**index - (-0.6180339)**index) / 2.236067977
+    return value.round().to_s
 end
